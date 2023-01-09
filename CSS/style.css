@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+main {
+  width: 75vw;
+  margin: 50px 0 50px 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+h1 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 200;
+}
+
+span {
+  font-weight: 600;
+}
+
+h2 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+  font-weight: 400;
+}
+
+.card {
+  box-shadow: 0px 10px 15px #dfe7f4;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px 15px;
+  margin: 25px 0px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.card p {
+}
+
+.card img {
+  margin-top: 30px;
+  align-self: flex-end;
+  width: max-content;
+}
+
+.card:nth-child(1) {
+  border-top: solid 4.5px hsl(180, 62%, 55%);
+}
+
+.card:nth-child(2) {
+  border-top: solid 4.5px hsl(0, 78%, 62%);
+}
+
+.card:nth-child(3) {
+  border-top: solid 4.5px hsl(34, 97%, 64%);
+}
+
+.card:nth-child(4) {
+  border-top: solid 4.5px hsl(212, 86%, 64%);
+}
+
+@media (min-width: 600px) {
+  main {
+    width: 90vw;
+  }
+  .card {
+    justify-content: space-around;
+    margin: 20px;
+    max-height: 300px;
+  }
+  dl {
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .card:nth-child(1){
+    align-self: center;
+    grid-row: span 2;
+   
+  }
+  .card:nth-child(3){
+    align-self: center;
+    grid-row: span 2;
+    
+  }
+
+  .card:nth-child(4) {
+    grid-column: 2;
+  }
+}
