@@ -55,9 +55,6 @@ p {
   flex-direction: column;
   gap: 15px;
 }
-.card p {
-}
-
 .card img {
   margin-top: 30px;
   align-self: flex-end;
@@ -90,22 +87,18 @@ p {
     max-height: 300px;
   }
   dl {
-    
-    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
 
-  .card:nth-child(1){
+  .card:nth-child(1) {
     align-self: center;
     grid-row: span 2;
-   
   }
-  .card:nth-child(3){
+  .card:nth-child(3) {
     align-self: center;
     grid-row: span 2;
-    
   }
 
   .card:nth-child(4) {
